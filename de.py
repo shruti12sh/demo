@@ -146,6 +146,6 @@ if __name__ == '__main__':
     df = tweet_analyzer.tweets_to_data_frame(tweets)
     df['sentiment'] = np.array([tweet_analyzer.analyze_sentiment(tweet) for tweet in df['tweets']])
 
-    print(df.head(10))
+    print(df.head(100))
 
 
